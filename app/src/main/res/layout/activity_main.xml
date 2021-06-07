@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent"
+       android:text="hello"
+        app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       android:layout_marginBottom="140dp"
+       android:layout_marginRight="150dp"
+       android:textSize="16sp"
+       android:textStyle="bold"
+       android:textColor="#111"
+       />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="408dp"
+        android:layout_height="123dp"
+        android:layout_marginBottom="310dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/download"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="hi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="167dp"
+        />
+
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="290dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#C11D1D"
+        android:src="@drawable/ngoisao"
+        android:scaleType="fitCenter"
+        />
+
+    <ImageView
+        android:layout_width="53dp"
+        android:layout_height="44dp"
+        android:src="@drawable/ic_baseline_attach_money_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="120dp"
+        android:layout_marginRight="240dp"
+        />
+
+
+   <TextView
+       android:layout_width="140dp"
+       android:layout_height="40dp"
+       android:text="Title"
+       android:textStyle="bold"
+       android:textColor="#111"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       android:layout_marginBottom="200dp"
+       android:layout_marginRight="145dp"
+       android:layout_marginTop="170dp"
+       android:textSize="16sp"
+       android:background="#BDBDBD"
+       />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Comment: "
+        android:gravity="end"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="200dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="170dp"
+        android:background="#BDBDBD"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="130dp"
+        android:hint="nội dung là gì ?"
+        android:padding="10dp"
+        android:text="có những lúc chuyện nhỏ tưởng đâu là khó "
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#BDBDBD"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="199dp"
+        android:layout_marginTop="130dp"
+        android:gravity="center_horizontal"
+        android:text="có những lúc thấy lo nhưng mọi chuyện lại chẳng nhầm nhò"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="50dp"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="#BDBDBD"/>
+
+
+    <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       android:layout_marginTop="300dp"
+       android:layout_marginRight="200dp"
+       android:text="HIDE"
+        android:textStyle="bold"
+       />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="300dp"
+        android:text="Comment"
+        android:textStyle="bold"
+        />
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:layout_marginTop="300dp"
+       android:layout_marginLeft="200dp"
+       android:text="SHARE"
+       android:textStyle="bold"
+       />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
