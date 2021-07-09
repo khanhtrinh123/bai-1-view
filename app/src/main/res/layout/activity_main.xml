@@ -140,44 +140,6 @@ tools:context=".MainActivity">
         android:padding="10dp"
         android:background="#BDBDBD"/>
 
-
-    <Button
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintBottom_toBottomOf="parent"
-       android:layout_marginTop="300dp"
-       android:layout_marginRight="200dp"
-       android:text="HIDE"
-        android:textStyle="bold"
-       />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="300dp"
-        android:text="Comment"
-        android:textStyle="bold"
-        />
-
-   <Button
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       android:layout_marginTop="300dp"
-       android:layout_marginLeft="200dp"
-       android:text="SHARE"
-       android:textStyle="bold"
-       />
     <Button
         android:id="@+id/search_go_btn"
         android:layout_width="wrap_content"
@@ -187,8 +149,20 @@ tools:context=".MainActivity">
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="400dp"
-        android:text="NEXT"
+        android:text="Send to activity"
         android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="300dp"
+        android:hint="Nhập chữ"
+        android:inputType="text"
         />
 
 

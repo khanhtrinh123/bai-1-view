@@ -6,7 +6,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".SecondDesktopActivity">
     <TextView
-        android:layout_width="120dp"
+        android:id="@+id/textman2"
+        android:layout_width="match_parent"
         android:layout_height="100dp"
         android:gravity="center_horizontal"
         android:text="Màn Hình 2!"
@@ -23,8 +24,23 @@
         android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="300dp"
         android:text="Send to fragment 1"
+        android:textColor="#111"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="200dp"
+        android:text="Send to fragment 2"
         android:textColor="#111"
         android:textSize="10dp"
         android:textStyle="bold"
@@ -33,8 +49,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <FrameLayout
         android:background="@color/colorPrimary"
+
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -42,6 +60,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="400dp"/>
+        android:layout_marginBottom="400dp">
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="200dp"
+        android:background="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
