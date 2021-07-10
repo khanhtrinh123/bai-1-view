@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        Log.d(Trinh, "onStart: ");
+        
     }
 
     @Override
@@ -43,25 +43,22 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        Log.d(Trinh, "onPause: ");
     }
 
     @Override
     protected void onRestart() {
-        super.onRestart();
-        Log.d(Trinh, "onRestart: ");
+        super.onRestart();      
     }
 
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.d(Trinh, "onStop: ");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.d(Trinh, "onDestroy: ");
+        
     }
 }
