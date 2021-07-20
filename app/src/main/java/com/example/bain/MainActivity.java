@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(Trinh, "onCreate: ");
         setContentView(R.layout.activity_main);
         search_go_btn = (Button) findViewById(R.id.search_go_btn);
         search_go_btn.setOnClickListener(new View.OnClickListener() {
@@ -37,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d(Trinh, "onResume: ");
     }
 
     @Override
