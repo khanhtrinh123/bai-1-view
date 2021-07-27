@@ -14,7 +14,6 @@ import androidx.fragment.app.FragmentTransaction;
 public class SecondDesktopActivity extends AppCompatActivity {
     private Button back;
     private TextView textman2;
-    ;
     private Button back2;
 
 
