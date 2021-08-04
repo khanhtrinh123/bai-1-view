@@ -18,11 +18,9 @@ public class MainActivity extends AppCompatActivity {
     private EditText editText;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(" ", "onCreate: ");
         setContentView(R.layout.activity_main);
         search_go_btn = (Button) findViewById(R.id.search_go_btn);
         editText = (EditText) findViewById((R.id.edittext1));
@@ -41,45 +39,15 @@ public class MainActivity extends AppCompatActivity {
         buttonCmt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               FragmentManager fragmentManager = getSupportFragmentManager();
-               FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-               fragmentTransaction.add(R.id.container3, new Fragment3()," ");
-               fragmentTransaction.commit();
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.add(R.id.container3, new Fragment3(), " ");
+                fragmentTransaction.commit();
             }
         });
 
 
     }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-    }
-
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
 }
+
+
