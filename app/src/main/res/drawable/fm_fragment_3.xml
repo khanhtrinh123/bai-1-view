@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    //item android:state_pressed="true" /> // Dòng này không đúng. nên bị lỗi. tìm cách fix đi nhé. bỏ dòng này đi thì lại chạy được vậy nguyên nhân là gì .
+    <item tools:ignore="StateListReachable">
+        <shape android:shape="oval">
+            <solid android:color="#D40CF6" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:layout_width="match_parent" android:shape="oval">
+            <solid android:color="#2196F3" />
+        </shape>
+    </item>
+</selector>
