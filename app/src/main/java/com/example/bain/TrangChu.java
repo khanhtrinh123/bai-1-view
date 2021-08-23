@@ -13,6 +13,7 @@ import androidx.fragment.app.FragmentTransaction;
 public class TrangChu extends AppCompatActivity {
     private Button click1;
     private Button click2;
+    private  Button click3;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,6 +34,14 @@ public class TrangChu extends AppCompatActivity {
             public void onClick(View v) {
                Intent a = new Intent(TrangChu.this , SecondDesktopActivity.class);
                startActivity(a);
+            }
+        });
+        click3 = (Button) findViewById(R.id.click3);
+        click3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent b = new Intent(TrangChu.this , InforActivity.class);
+                startActivity(b);
             }
         });
 

@@ -27,11 +27,11 @@ public class MainActivity extends AppCompatActivity {
 
 
         search_go_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, SecondDesktopActivity.class);
-                intent.putExtra("KEY_LINK_FULL_HD", editText.getText().toString());
-                startActivity(intent);
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(MainActivity.this, SecondDesktopActivity.class);
+                        intent.putExtra("KEY_LINK_FULL_HD", editText.getText().toString());
+                        startActivity(intent);
 
             }
         });
