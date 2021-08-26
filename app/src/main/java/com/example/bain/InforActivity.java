@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,8 +17,8 @@ public class InforActivity extends AppCompatActivity{
     private EditText username;
     private EditText password;
     private EditText email;
-    private CheckBox checkbox1;
-    private  CheckBox checkbox2;
+    private RadioButton checkbox1;
+    private  RadioButton checkbox2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +28,8 @@ public class InforActivity extends AppCompatActivity{
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
         email = (EditText) findViewById(R.id.email);
-        checkbox1 = (CheckBox) findViewById(R.id.checkbox1);
-        checkbox2= (CheckBox) findViewById(R.id.checkbox2);
+        checkbox1 = (RadioButton) findViewById(R.id.checkbox1);
+        checkbox2= (RadioButton) findViewById(R.id.checkbox2);
 
                 bnt_click.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -54,9 +55,6 @@ public class InforActivity extends AppCompatActivity{
                         if(isChecked){
                             Toast.makeText(InforActivity.this, "Bạn đã chọn male", Toast.LENGTH_SHORT).show();
                         }
-                        else {
-                            Toast.makeText(InforActivity.this, " Bạn bỏ chọn male",Toast.LENGTH_SHORT).show();
-                        }
                     }
                 });
                 checkbox2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -64,8 +62,6 @@ public class InforActivity extends AppCompatActivity{
                     public void onCheckedChanged(CompoundButton buttonView, boolean b) {
                         if(b){
                             Toast.makeText(InforActivity.this,"Bạn chọn female",Toast.LENGTH_SHORT).show();
-                        }else{
-                            Toast.makeText(InforActivity.this,"Bạn bỏ chọn female", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

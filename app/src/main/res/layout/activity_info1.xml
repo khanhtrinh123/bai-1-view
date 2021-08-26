@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -24,7 +25,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="110dp"
         >
     </EditText>
     <EditText
@@ -35,6 +36,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="20dp"
         android:hint="Password"
         android:id="@+id/password"
         >
@@ -42,6 +44,7 @@
     </EditText>
     <EditText
         android:layout_width="250dp"
+
         android:layout_height="wrap_content"
         android:inputType="text"
         app:layout_constraintTop_toTopOf="parent"
@@ -50,31 +53,35 @@
         app:layout_constraintStart_toStartOf="parent"
         android:hint="Email"
         android:id="@+id/email"
-        android:layout_marginTop="100dp">
+        android:layout_marginTop="80dp">
 
     </EditText>
-    <CheckBox
+    <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="male"
-        android:id="@+id/checkbox1"
+        tools:ignore="MissingConstraints"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="200dp"
-        android:layout_marginRight="200dp" />
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="female"
-        android:id="@+id/checkbox2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="50dp" />
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="male"
+            android:id="@+id/checkbox1"
+
+           />
+
+        <RadioButton
+            android:id="@+id/checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="female" />
+
+    </RadioGroup>
+
 
 
     <Switch
@@ -89,7 +96,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="310dp"
         >
 
     </Switch>
@@ -105,7 +112,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="380dp"
+        android:layout_marginTop="390dp"
         >
 
     </Switch>
@@ -120,5 +127,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginBottom="350dp"
         android:layout_marginLeft="270dp"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

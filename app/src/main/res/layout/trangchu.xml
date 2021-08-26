@@ -6,7 +6,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click 1"
+        android:text="Bài 1"
         android:id="@+id/click1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,7 +25,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:background="@drawable/click_button_2"
-        android:text="Click 2 "
+        android:text="Bài Fragment "
+        android:padding="10dp"
         >
 
     </Button>
@@ -39,7 +40,8 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="150dp"
         android:background="@drawable/click_button_2"
-        android:text="Click 3 "
+        android:text="Information"
+        android:padding="10dp"
         >
 
     </Button>
