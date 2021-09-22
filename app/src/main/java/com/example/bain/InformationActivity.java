@@ -11,6 +11,8 @@ public class InformationActivity extends AppCompatActivity {
     private TextView man2;
     private TextView pass;
     private TextView Email;
+    private TextView checkbox1;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +23,8 @@ public class InformationActivity extends AppCompatActivity {
         pass.setText(getIntent().getStringExtra("id_1"));
         Email =(TextView)findViewById(R.id.email1);
         Email.setText(getIntent().getStringExtra("id_2"));
+        checkbox1 = (TextView) findViewById(R.id.cb1);
+        checkbox1.setText(getIntent().getStringExtra("cb1"));
 
 
 

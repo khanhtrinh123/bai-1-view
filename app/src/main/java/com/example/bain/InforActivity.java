@@ -8,6 +8,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +20,8 @@ public class InforActivity extends AppCompatActivity{
     private EditText email;
     private RadioButton checkbox1;
     private  RadioButton checkbox2;
+    private Switch sw1;
+    private Switch sw2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,19 +33,22 @@ public class InforActivity extends AppCompatActivity{
         email = (EditText) findViewById(R.id.email);
         checkbox1 = (RadioButton) findViewById(R.id.checkbox1);
         checkbox2= (RadioButton) findViewById(R.id.checkbox2);
+        sw1 = (Switch) findViewById(R.id.sw1);
+        sw2 = (Switch) findViewById(R.id.sw2);
 
                 bnt_click.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        String gioitinh = "Bạn đã chọn : ";
+
+                        Intent intent = new Intent(InforActivity.this, InformationActivity.class);
+                        String gioitinh = " ";
                         if (checkbox1.isChecked()){
                             gioitinh += checkbox1.getText() + "\n";
                         }
                         if (checkbox2.isChecked()){
                             gioitinh += checkbox2.getText() + "\n";
                         }
-                        Toast.makeText(InforActivity.this, gioitinh, Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(InforActivity.this, InformationActivity.class);
+                        intent.putExtra("cb1", gioitinh.toString());
                         intent.putExtra("id", username.getText().toString());
                         intent.putExtra("id_1", password.getText().toString());
                         intent.putExtra("id_2", email.getText().toString());
@@ -62,6 +68,22 @@ public class InforActivity extends AppCompatActivity{
                     public void onCheckedChanged(CompoundButton buttonView, boolean b) {
                         if(b){
                             Toast.makeText(InforActivity.this,"Bạn chọn female",Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+                sw1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked){
+                            Toast.makeText(InforActivity.this,"Bạn chọn Email subscriptions " , Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+                sw2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked){
+                            Toast.makeText(InforActivity.this,"Bạn chọn Other Email " , Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

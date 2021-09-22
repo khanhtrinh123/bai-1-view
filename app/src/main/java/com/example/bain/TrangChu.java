@@ -14,6 +14,7 @@ public class TrangChu extends AppCompatActivity {
     private Button click1;
     private Button click2;
     private  Button click3;
+    private Button click4;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -29,9 +30,9 @@ public class TrangChu extends AppCompatActivity {
             }
         });
         click2 = (Button) findViewById(R.id.click2);
-        click2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                click2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
                Intent a = new Intent(TrangChu.this , SecondDesktopActivity.class);
                startActivity(a);
             }
@@ -42,6 +43,14 @@ public class TrangChu extends AppCompatActivity {
             public void onClick(View v) {
                 Intent b = new Intent(TrangChu.this , InforActivity.class);
                 startActivity(b);
+            }
+        });
+        click4 = (Button) findViewById(R.id.click4);
+        click4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent c = new Intent(TrangChu.this,RecyclerViewActivity.class);
+                startActivity(c);
             }
         });
 

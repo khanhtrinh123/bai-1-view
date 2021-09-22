@@ -45,6 +45,22 @@
         >
 
     </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/click4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/click_button_2"
+        android:text="RecycleView"
+        android:padding="10dp"
+        >
+
+    </Button>
+
 
 
 
